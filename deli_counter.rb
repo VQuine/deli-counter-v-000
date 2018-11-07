@@ -22,3 +22,11 @@ def take_a_number(deli_queue, new_name)
   place_in_line = deli_queue.count
   puts "Welcome, #{new_name}. You are number #{place_in_line.to_s} in line."
 end
+
+def now_serving(deli_queue)
+  if deli_queue.count == 0
+    puts "There is nobody waiting to be served!"
+  else
+    next_person = deli_queue.shift #plucks first item off array & holds it
+    puts "#{next_person}"
+end
