@@ -28,6 +28,6 @@ def now_serving(deli_queue)
     puts "There is nobody waiting to be served!"
   else
     next_person = deli_queue.shift #plucks first item off array & holds it
-    puts "#{next_person}"
+    puts "Currently serving #{next_person}"
   end
 end
