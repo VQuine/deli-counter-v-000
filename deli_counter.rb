@@ -17,5 +17,8 @@ def line(deli_queue)
   end
 end
 
-def take_a_number(deli_queue,)
+def take_a_number(deli_queue, new_name)
+  deli_queue << new_name
+  place_in_line = deli_queue.count
+  puts "#{place_in_line.to_s} . #{new_name}"
 end
