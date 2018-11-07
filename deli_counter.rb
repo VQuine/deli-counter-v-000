@@ -29,4 +29,5 @@ def now_serving(deli_queue)
   else
     next_person = deli_queue.shift #plucks first item off array & holds it
     puts "#{next_person}"
+  end
 end
